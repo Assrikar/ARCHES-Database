@@ -395,13 +395,13 @@ function focus(d) {
 			.style("opacity", .9);
 			// Check toggleFunding button if investigator funding needs to be hidden
 			if (activeFundingVis == 1) {
-				div.html("<b>Investigator Name</b>" + "<br/>" + d.id + "<br/>" + "<b>Affiliation</b>" + "<br/>" + d.affiliation.toUpperCase() + "<br/>" + "<b>Total Funding Received as PI</b>" + "<br/>" + "$" + numberWithCommas(d.funding) + "<br/>" + "<b>Total Funded Projects</b>" + "<br/>" + totalConnections)
+				div.html("<b>Investigator Name</b>" + "<br/>" + d.id + "<br/>" + "<b>Total Funding Received as PI</b>" + "<br/>" + "$" + numberWithCommas(d.funding) + "<br/>" + "<b>Total Funded Projects</b>" + "<br/>" + totalConnections +  "<br/>" + "<b>First Name</b>" + "<br/>" + d.First Name +"<br/>" + "<b>Last Name</b>" + "<br/>" + d.Last Name + "<br/>" + "<b>Organization</b>" + "<br/>" + d.Organization + "<br/>" + "<b>Profession</b>" + "<br/>" + d.Profession + "<br/>" + "<b>Department / Unit</b>" + "<br/>" + d.Department / Unit + "<br/>" + "<b>Specialization</b>" + "<br/>" + d.Specialization + "<br/>" + "<b>Email</b>" + "<br/>" + d.Email + "<br/>" + "<b>Position</b>" + "<br/>" + d.Position + "<br/>" + "<b>Webpage</b>" + "<br/>" + d.Webpage + "<br/>" + "<b>Office Address</b>" + "<br/>" + d.Office Address + "<br/>" + "<b>Phone</b>" + "<br/>" + d.Phone)
 				.style("left", (d3.event.pageX) + "px")
 				.style("padding", "7px")
 				.style("top", (d3.event.pageY - 28) + "px");
 			}
 			else {
-				div.html("<b>Investigator Name</b>" + "<br/>" + d.id + "<br/>" + "<b>Affiliation</b>" + "<br/>" + d.affiliation.toUpperCase() + "<br/>" + "<b>Total Funding Received as PI</b>" + "<br/>" + "" + "<br/>" + "<b>Total Funded Projects</b>" + "<br/>" + totalConnections)
+				div.html("<b>Investigator Name</b>" + "<br/>" + d.id + "<br/>" + "<b>Total Funding Received as PI</b>" + "<br/>" + "$" + numberWithCommas(d.funding) + "<br/>" + "<b>Total Funded Projects</b>" + "<br/>" + totalConnections +  "<br/>" + "<b>First Name</b>" + "<br/>" + d.First Name +"<br/>" + "<b>Last Name</b>" + "<br/>" + d.Last Name + "<br/>" + "<b>Organization</b>" + "<br/>" + d.Organization + "<br/>" + "<b>Profession</b>" + "<br/>" + d.Profession + "<br/>" + "<b>Department / Unit</b>" + "<br/>" + d.Department / Unit + "<br/>" + "<b>Specialization</b>" + "<br/>" + d.Specialization + "<br/>" + "<b>Email</b>" + "<br/>" + d.Email + "<br/>" + "<b>Position</b>" + "<br/>" + d.Position + "<br/>" + "<b>Webpage</b>" + "<br/>" + d.Webpage + "<br/>" + "<b>Office Address</b>" + "<br/>" + d.Office Address + "<br/>" + "<b>Phone</b>" + "<br/>" + d.Phone)
 				.style("left", (d3.event.pageX) + "px")
 				.style("padding", "7px")
 				.style("top", (d3.event.pageY - 28) + "px");
